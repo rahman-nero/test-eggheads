@@ -59,7 +59,7 @@ function refactored()
     // Проверяем есть ли пользователи для загрузки
     if (!empty($user_ids)) {
         // Тут биндить не получится
-        $users_stmt = $pdo->query('SELECT name, gender FROM users WHERE id IN (' . implode(',', $user_ids) . ')');
+        $users_stmt = $pdo->query('SELECT id, name, gender FROM users WHERE id IN (' . implode(',', $user_ids) . ')');
 
         // Получение всех пользователей
         $users = $users_stmt->fetchAll(PDO::FETCH_ASSOC);
