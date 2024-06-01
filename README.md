@@ -12,6 +12,8 @@ SELECT * FROM users WHERE u_id = 1; DELETE FROM users
 ```
 и т.д
 
+Исправленная версия в 1.php
+
 ---
 
 ## 2
